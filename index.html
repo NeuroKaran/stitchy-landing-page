@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stitchy — Smart Indian Calorie Tracker</title>
+  <meta name="description"
+    content="Stitchy helps you track Indian meals with AI. Snap, speak, and get instant nutrition insights with a friendly daily journal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <img src="../public/mascots/logo.svg" alt="Stitchy logo" />
+        <span>Stitchy</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#insights">Insights</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary header-btn" href="#cta">Start Tracking</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero reveal-on-scroll">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">AI-powered nutrition for Indian food</p>
+          <h1>Track calories the way you actually eat.</h1>
+          <p class="hero-text">
+            Stitchy combines photo + voice input to understand real meals, estimate macros, and help you build healthier
+            habits without manual logging friction.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#cta">Get Stitchy</a>
+            <a class="btn btn-secondary" href="#how">See how it works</a>
+          </div>
+          <p class="hero-subtext">Built for home-cooked plates, thalis, curries, and everyday Indian diets.</p>
+        </div>
+        <div class="hero-card">
+          <img src="../public/mascots/waving.svg" alt="Stitchy mascot waving" class="mascot float-anim" />
+          <div class="stat">
+            <span>Today</span>
+            <strong>1,420 kcal</strong>
+          </div>
+          <div class="bars">
+            <div><label>Protein</label><progress value="74" max="100"></progress></div>
+            <div><label>Carbs</label><progress value="61" max="100"></progress></div>
+            <div><label>Fats</label><progress value="48" max="100"></progress></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section reveal-on-scroll">
+      <div class="container">
+        <h2>How Stitchy works</h2>
+        <p class="section-lead">A simple 3-step flow designed to keep logging fast and consistent.</p>
+        <div class="grid-3">
+          <article class="card reveal-on-scroll" style="transition-delay: 0.1s">
+            <span class="step">01</span>
+            <h3>Snap your meal</h3>
+            <p>Capture your plate from camera or gallery in seconds.</p>
+          </article>
+          <article class="card reveal-on-scroll" style="transition-delay: 0.2s">
+            <span class="step">02</span>
+            <h3>Speak context</h3>
+            <p>Tell Stitchy what matters: portion size, oil/ghee, and ingredients.</p>
+          </article>
+          <article class="card reveal-on-scroll" style="transition-delay: 0.3s">
+            <span class="step">03</span>
+            <h3>Get nutrition instantly</h3>
+            <p>See calories and macros, then save directly into your daily journal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section alt reveal-on-scroll">
+      <div class="container">
+        <h2>Why people use Stitchy</h2>
+        <div class="feature-grid">
+          <article class="feature reveal-on-scroll" style="transition-delay: 0.1s">
+            <h3>Multimodal meal analysis</h3>
+            <p>Image + voice together improve food recognition for complex Indian meals.</p>
+          </article>
+          <article class="feature reveal-on-scroll" style="transition-delay: 0.2s">
+            <h3>Personalized calorie targets</h3>
+            <p>Onboarding calculates BMR, TDEE, and macro goals based on your profile and objective.</p>
+          </article>
+          <article class="feature reveal-on-scroll" style="transition-delay: 0.3s">
+            <h3>Daily dashboard clarity</h3>
+            <p>Track calories left, macro progress, and meal-level details in one place.</p>
+          </article>
+          <article class="feature reveal-on-scroll" style="transition-delay: 0.4s">
+            <h3>Weekly health insights</h3>
+            <p>Get AI-driven trend analysis, risk flags, nutrient gaps, and practical actions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="insights" class="section reveal-on-scroll">
+      <div class="container insight-wrap">
+        <div>
+          <h2>Your food journal, not just a calorie counter</h2>
+          <p class="section-lead">
+            Stitchy helps you spot patterns across days, so decisions feel informed instead of guessy.
+          </p>
+          <ul class="bullet-list">
+            <li>Daily meal history with calories and macros</li>
+            <li>Health score with explainable summary</li>
+            <li>Actionable suggestions for better balance</li>
+          </ul>
+        </div>
+        <div class="insight-card reveal-on-scroll" style="transition-delay: 0.2s">
+          <img src="../public/mascots/happy.svg" alt="Stitchy mascot happy" class="float-anim" />
+          <p class="score">Health Score <strong>78 / 100</strong></p>
+          <p class="small">Strong protein consistency. Improve fiber and reduce late-night refined carbs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt faq reveal-on-scroll">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Is Stitchy only for weight loss?</summary>
+            <p>No. Stitchy supports lose, maintain, and gain goals with profile-based calorie and macro targets.</p>
+          </details>
+          <details>
+            <summary>Can I log meals without speaking?</summary>
+            <p>Yes. You can scan with image only, though voice context can improve estimate quality.</p>
+          </details>
+          <details>
+            <summary>Does Stitchy support Indian cuisine well?</summary>
+            <p>Yes. The nutrition analysis flow is optimized for Indian dishes, portions, and cooking context.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="section cta reveal-on-scroll">
+      <div class="container cta-box">
+        <img src="../public/mascots/surfing.svg" alt="Stitchy mascot surfing" class="float-anim" />
+        <div>
+          <h2>Build better food habits with Stitchy.</h2>
+          <p>Start logging meals in minutes and get clearer nutrition decisions every day.</p>
+        </div>
+        <a class="btn btn-primary btn-lg" href="#">Start now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Stitchy</p>
+      <p>Smart calorie tracking for real Indian meals.</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
