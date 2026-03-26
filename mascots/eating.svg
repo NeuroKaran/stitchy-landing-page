@@ -1,0 +1,43 @@
+<svg viewBox="0 0 120 120" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Body -->
+    <ellipse cx="60" cy="70" rx="30" ry="32" fill="#4169E1" />
+    <ellipse cx="60" cy="77" rx="18" ry="16" fill="#7EB6E8" />
+    <!-- Head -->
+    <circle cx="60" cy="42" r="24" fill="#4169E1" />
+    <!-- Left ear -->
+    <ellipse cx="32" cy="22" rx="12" ry="20" fill="#4169E1" transform="rotate(-25 32 22)" />
+    <ellipse cx="32" cy="22" rx="7" ry="14" fill="#6B8DD6" transform="rotate(-25 32 22)" />
+    <ellipse cx="32" cy="22" rx="4" ry="10" fill="#FF9ECE" transform="rotate(-25 32 22)" />
+    <!-- Right ear -->
+    <ellipse cx="88" cy="22" rx="12" ry="20" fill="#4169E1" transform="rotate(25 88 22)" />
+    <ellipse cx="88" cy="22" rx="7" ry="14" fill="#6B8DD6" transform="rotate(25 88 22)" />
+    <ellipse cx="88" cy="22" rx="4" ry="10" fill="#FF9ECE" transform="rotate(25 88 22)" />
+    <!-- Eyes - excited -->
+    <ellipse cx="50" cy="38" rx="7" ry="8" fill="white" />
+    <ellipse cx="70" cy="38" rx="7" ry="8" fill="white" />
+    <circle cx="52" cy="37" r="4" fill="#1a1a2e" />
+    <circle cx="68" cy="37" r="4" fill="#1a1a2e" />
+    <circle cx="53.5" cy="35.5" r="1.5" fill="white" />
+    <circle cx="69.5" cy="35.5" r="1.5" fill="white" />
+    <!-- Nose -->
+    <ellipse cx="60" cy="44" rx="3.5" ry="2.5" fill="#2a2a4e" />
+    <!-- Open happy mouth -->
+    <ellipse cx="60" cy="52" rx="7" ry="5" fill="#1a1a2e" />
+    <ellipse cx="60" cy="50" rx="5" ry="2" fill="#FF6B8A" />
+    <!-- Cheeks -->
+    <circle cx="40" cy="46" r="3.5" fill="rgba(255, 158, 206, 0.4)" />
+    <circle cx="80" cy="46" r="3.5" fill="rgba(255, 158, 206, 0.4)" />
+    <!-- Left arm holding bowl -->
+    <ellipse cx="32" cy="68" rx="9" ry="5" fill="#4169E1" transform="rotate(-30 32 68)" />
+    <!-- Right arm -->
+    <ellipse cx="88" cy="68" rx="9" ry="5" fill="#4169E1" transform="rotate(20 88 68)" />
+    <!-- Bowl of food -->
+    <ellipse cx="38" cy="62" rx="12" ry="5" fill="#E8D5A3" />
+    <path d="M26 62 Q32 72 50 62" fill="#C4856A" opacity="0.6" />
+    <circle cx="34" cy="59" r="2" fill="#A8B89C" />
+    <circle cx="40" cy="58" r="1.5" fill="#C75B5B" />
+    <circle cx="37" cy="60" r="1.8" fill="#E8D5A3" />
+    <!-- Feet -->
+    <ellipse cx="48" cy="98" rx="10" ry="5" fill="#4169E1" />
+    <ellipse cx="72" cy="98" rx="10" ry="5" fill="#4169E1" />
+</svg>

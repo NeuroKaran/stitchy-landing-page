@@ -1,0 +1,36 @@
+<svg viewBox="0 0 140 120" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Wave -->
+    <path d="M0 95 Q20 80 40 90 Q60 100 80 88 Q100 76 120 85 Q130 90 140 88 L140 120 L0 120Z" fill="#A8D4E8" opacity="0.4" />
+    <path d="M0 100 Q25 88 50 95 Q75 102 100 92 Q120 84 140 92 L140 120 L0 120Z" fill="#A8D4E8" opacity="0.25" />
+    <!-- Surfboard -->
+    <ellipse cx="70" cy="82" rx="30" ry="4" fill="#E8D5A3" transform="rotate(-5 70 82)" />
+    <line x1="42" y1="83" x2="98" y2="79" stroke="#C4856A" stroke-width="1" opacity="0.5" />
+    <!-- Stitch body on surfboard -->
+    <ellipse cx="70" cy="60" rx="18" ry="20" fill="#4169E1" />
+    <ellipse cx="70" cy="65" rx="11" ry="10" fill="#7EB6E8" />
+    <!-- Head -->
+    <circle cx="70" cy="38" r="16" fill="#4169E1" />
+    <!-- Ears flapping -->
+    <ellipse cx="50" cy="22" rx="8" ry="14" fill="#4169E1" transform="rotate(-35 50 22)" />
+    <ellipse cx="50" cy="22" rx="5" ry="9" fill="#6B8DD6" transform="rotate(-35 50 22)" />
+    <ellipse cx="90" cy="22" rx="8" ry="14" fill="#4169E1" transform="rotate(35 90 22)" />
+    <ellipse cx="90" cy="22" rx="5" ry="9" fill="#6B8DD6" transform="rotate(35 90 22)" />
+    <!-- Eyes -->
+    <ellipse cx="64" cy="35" rx="5" ry="6" fill="white" />
+    <ellipse cx="76" cy="35" rx="5" ry="6" fill="white" />
+    <circle cx="65.5" cy="35" r="2.5" fill="#1a1a2e" />
+    <circle cx="74.5" cy="35" r="2.5" fill="#1a1a2e" />
+    <!-- Nose -->
+    <ellipse cx="70" cy="40" rx="2.5" ry="1.8" fill="#2a2a4e" />
+    <!-- Big smile -->
+    <path d="M63 44 Q67 49 70 48 Q73 49 77 44" stroke="#1a1a2e" stroke-width="1.5" fill="none" stroke-linecap="round" />
+    <!-- Arms spread for balance -->
+    <line x1="52" y1="55" x2="38" y2="48" stroke="#4169E1" stroke-width="6" stroke-linecap="round" />
+    <line x1="88" y1="55" x2="102" y2="48" stroke="#4169E1" stroke-width="6" stroke-linecap="round" />
+    <!-- Feet on board -->
+    <ellipse cx="62" cy="78" rx="6" ry="3" fill="#4169E1" />
+    <ellipse cx="78" cy="77" rx="6" ry="3" fill="#4169E1" />
+    <!-- Splash -->
+    <text x="15" y="90" font-size="10" opacity="0.4">💦</text>
+    <text x="115" y="85" font-size="8" opacity="0.3">🌊</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg viewBox="0 0 120 120" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Body curled up -->
+    <ellipse cx="60" cy="75" rx="34" ry="26" fill="#4169E1" />
+    <ellipse cx="60" cy="80" rx="20" ry="14" fill="#7EB6E8" />
+    <!-- Head resting -->
+    <circle cx="46" cy="52" r="22" fill="#4169E1" />
+    <!-- Ears drooped -->
+    <ellipse cx="26" cy="36" rx="10" ry="16" fill="#4169E1" transform="rotate(-40 26 36)" />
+    <ellipse cx="26" cy="36" rx="6" ry="11" fill="#6B8DD6" transform="rotate(-40 26 36)" />
+    <ellipse cx="66" cy="34" rx="10" ry="16" fill="#4169E1" transform="rotate(10 66 34)" />
+    <ellipse cx="66" cy="34" rx="6" ry="11" fill="#6B8DD6" transform="rotate(10 66 34)" />
+    <!-- Closed eyes - peaceful lines -->
+    <path d="M36 49 Q40 52 44 49" stroke="#1a1a2e" stroke-width="1.8" fill="none" stroke-linecap="round" />
+    <path d="M48 49 Q52 52 56 49" stroke="#1a1a2e" stroke-width="1.8" fill="none" stroke-linecap="round" />
+    <!-- Nose -->
+    <ellipse cx="46" cy="55" rx="3" ry="2" fill="#2a2a4e" />
+    <!-- Slight smile -->
+    <path d="M42 58 Q46 61 50 58" stroke="#1a1a2e" stroke-width="1.2" fill="none" stroke-linecap="round" />
+    <!-- Tail curled -->
+    <path d="M88 68 Q95 55 90 48 Q85 42 80 48" stroke="#4169E1" stroke-width="6" fill="none" stroke-linecap="round" />
+    <!-- Z's floating -->
+    <text x="70" y="30" font-size="14" fill="#B8A9C9" font-family="serif" font-weight="bold" opacity="0.7">Z</text>
+    <text x="82" y="20" font-size="10" fill="#B8A9C9" font-family="serif" font-weight="bold" opacity="0.5">z</text>
+    <text x="90" y="14" font-size="7" fill="#B8A9C9" font-family="serif" font-weight="bold" opacity="0.3">z</text>
+    <!-- Stars -->
+    <circle cx="100" cy="25" r="1.5" fill="#E8D5A3" opacity="0.4" />
+    <circle cx="95" cy="10" r="1" fill="#E8D5A3" opacity="0.3" />
+</svg>

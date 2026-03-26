@@ -1,0 +1,40 @@
+<svg viewBox="0 0 120 120" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Body -->
+    <ellipse cx="60" cy="68" rx="30" ry="32" fill="#4169E1" />
+    <!-- Belly -->
+    <ellipse cx="60" cy="75" rx="18" ry="16" fill="#7EB6E8" />
+    <!-- Head -->
+    <circle cx="60" cy="42" r="24" fill="#4169E1" />
+    <!-- Left ear -->
+    <ellipse cx="32" cy="22" rx="12" ry="20" fill="#4169E1" transform="rotate(-20 32 22)" />
+    <ellipse cx="32" cy="22" rx="7" ry="14" fill="#6B8DD6" transform="rotate(-20 32 22)" />
+    <ellipse cx="32" cy="22" rx="4" ry="10" fill="#FF9ECE" transform="rotate(-20 32 22)" />
+    <!-- Right ear -->
+    <ellipse cx="88" cy="22" rx="12" ry="20" fill="#4169E1" transform="rotate(20 88 22)" />
+    <ellipse cx="88" cy="22" rx="7" ry="14" fill="#6B8DD6" transform="rotate(20 88 22)" />
+    <ellipse cx="88" cy="22" rx="4" ry="10" fill="#FF9ECE" transform="rotate(20 88 22)" />
+    <!-- Eyes -->
+    <ellipse cx="50" cy="38" rx="7" ry="8" fill="white" />
+    <ellipse cx="70" cy="38" rx="7" ry="8" fill="white" />
+    <circle cx="52" cy="38" r="3.5" fill="#1a1a2e" />
+    <circle cx="68" cy="38" r="3.5" fill="#1a1a2e" />
+    <circle cx="53" cy="36" r="1.2" fill="white" />
+    <circle cx="69" cy="36" r="1.2" fill="white" />
+    <!-- Nose -->
+    <ellipse cx="60" cy="44" rx="3.5" ry="2.5" fill="#2a2a4e" />
+    <ellipse cx="59" cy="43.5" rx="1" ry="0.7" fill="#5a5a8e" />
+    <!-- Happy mouth -->
+    <path d="M50 50 Q55 57 60 56 Q65 57 70 50" stroke="#1a1a2e" stroke-width="2" fill="none" stroke-linecap="round" />
+    <!-- Cheek spots -->
+    <circle cx="40" cy="45" r="3" fill="rgba(255, 158, 206, 0.4)" />
+    <circle cx="80" cy="45" r="3" fill="rgba(255, 158, 206, 0.4)" />
+    <!-- Arms -->
+    <ellipse cx="35" cy="68" rx="8" ry="5" fill="#4169E1" transform="rotate(-15 35 68)" />
+    <ellipse cx="85" cy="68" rx="8" ry="5" fill="#4169E1" transform="rotate(15 85 68)" />
+    <!-- Feet -->
+    <ellipse cx="48" cy="96" rx="10" ry="5" fill="#4169E1" />
+    <ellipse cx="72" cy="96" rx="10" ry="5" fill="#4169E1" />
+    <!-- Stars around -->
+    <text x="16" y="15" font-size="10" opacity="0.6">✨</text>
+    <text x="95" y="12" font-size="8" opacity="0.5">⭐</text>
+</svg>
