@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Stitchy | Our Mission & Story</title>
+    <link rel="icon" href="./mascots/logo.svg" type="image/svg+xml" />
+    <meta name="description"
+        content="Learn about Stitchy's mission to make calorie tracking effortless for Indian meals using multimodal AI — our story, technology, and vision." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="./styles.css?v=1774728863042" />
+</head>
+
+<body>
+
+    <div class="card-nav-container">
+        <nav class="card-nav" id="globalNav" style="background-color: #fff;">
+            <div class="card-nav-top">
+                <div class="hamburger-menu" id="hamburgerMenu" role="button" aria-label="Open menu" tabindex="0"
+                    style="color: #000;">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+
+                <a class="logo-container" href="./index.html" style="text-decoration:none;">
+                    <img src="./mascots/logo.svg" alt="Stitchy Logo" class="logo" />
+                </a>
+
+                <a href="./early-access.html" class="card-nav-cta-button"
+                    style="background-color: #111; color: white; display: flex; text-decoration: none;">Get Started</a>
+            </div>
+
+            <div class="card-nav-content" id="cardNavContent" aria-hidden="true">
+                <div class="nav-card" style="background-color: #f3f4f6; color: #111827;">
+                    <div class="nav-card-label">Product</div>
+                    <div class="nav-card-links">
+
+                        <a class="nav-card-link" href="./index.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                            </svg>
+                            Home
+                        </a>
+                        <a class="nav-card-link" href="./index.html#how">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            How it Works
+                        </a>
+                        <a class="nav-card-link" href="./index.html#features">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            Features
+                        </a>
+                        <a class="nav-card-link" href="./index.html#insights">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            AI Insights
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-card" style="background-color: #e5e7eb; color: #111827;">
+                    <div class="nav-card-label">Company</div>
+                    <div class="nav-card-links">
+                        <a class="nav-card-link" href="./about.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            About Us
+                        </a>
+                        <a class="nav-card-link" href="./contact.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            Contact
+                        </a>
+                        <a class="nav-card-link" href="./pricing.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            Pricing
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-card" style="background-color: #f9fafb; color: #111827;">
+                    <div class="nav-card-label">Legal</div>
+                    <div class="nav-card-links">
+                        <a class="nav-card-link" href="./privacy.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            Privacy Policy
+                        </a>
+                        <a class="nav-card-link" href="./terms.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            Terms of Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="kicker">ABOUT US</p>
+                <h1>The story behind Stitchy</h1>
+                <p>We're building the smartest calorie tracker for the 1.4 billion people who eat Indian food every day.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mission -->
+        <section class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>Why Indian food tracking is broken 🍛</h2>
+                        <p>
+                            Every calorie tracking app on the market was built for Western diets. They work great if you
+                            eat a
+                            sandwich or a bowl of oatmeal. But try logging a thali with 6 different dishes, hidden ghee,
+                            and
+                            home-ground masalas — and they fall apart completely.
+                        </p>
+                        <p>
+                            We experienced this frustration firsthand. Searching for "1 katori dal" on MyFitnessPal
+                            returns dozens of
+                            wildly different entries. HealthifyMe locks basic tracking behind expensive paywalls. Cal AI
+                            can't tell the
+                            difference between palak paneer and saag.
+                        </p>
+                        <p>
+                            <strong>Stitchy was born from this pain.</strong> We asked a simple question: what if
+                            tracking a meal was
+                            as easy as taking a photo and leaving a quick voice note?
+                        </p>
+                    </div>
+                    <div class="about-visual">
+                        <img src="./mascots/logo.svg" alt="Stitchy mascot"
+                            style="background: #fff; padding: 40px; box-shadow: var(--shadow);" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Approach -->
+        <section class="section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <h2>Our approach: Multimodal AI 🧠</h2>
+                    <p class="section-lead" style="margin: 12px auto 0; text-align: center;">
+                        Instead of relying on images alone (which fail for complex Indian meals) or manual search (which
+                        is
+                        painfully slow), Stitchy fuses two modalities for unprecedented accuracy.
+                    </p>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon">📸</div>
+                        <h4>Visual Recognition</h4>
+                        <p>Computer vision identifies the dishes on your plate, detecting rotis, rice, curries, and
+                            sides
+                            automatically.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">🎤</div>
+                        <h4>Voice Context</h4>
+                        <p>Your voice note adds the context cameras can't see — "extra ghee", "half portion", "no cream
+                            in the
+                            dal".</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">⚡</div>
+                        <h4>AI Fusion</h4>
+                        <p>Gemini 2.5 Flash processes both inputs simultaneously, cross-referencing visual data with
+                            spoken
+                            modifiers for accurate results in under 5 seconds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Insights Vision -->
+        <section class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual" style="order: -1;">
+                        <img src="./mascots/happy.svg" alt="Stitchy happy" class="float-anim"
+                            style="max-width: 180px; background: transparent; box-shadow: none;" />
+                    </div>
+                    <div class="about-text">
+                        <h2>Beyond calories: AI Health Insights 🔮</h2>
+                        <p>
+                            Tracking calories is just the beginning. Stitchy's AI analyses your food data over time to
+                            predict how
+                            your diet affects your health, mood, and energy levels.
+                        </p>
+                        <p>
+                            Every meal you log becomes a data point. The AI identifies patterns — like how skipping
+                            protein at lunch
+                            causes afternoon energy crashes, or how high-sugar dinners correlate with poor sleep
+                            quality.
+                        </p>
+                        <p>
+                            And we're just getting started. Our roadmap includes <strong>wearable integrations</strong>
+                            — pulling
+                            sleep data, calories burned, and heart rate from your smartwatch to create a truly holistic
+                            health
+                            prediction engine.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values -->
+        <section class="section">
+            <div class="container" style="max-width: 700px; text-align: center;">
+                <h2>What we believe</h2>
+                <p class="section-lead" style="text-align: center; margin: 12px auto 40px;">The principles that guide
+                    every
+                    feature we build.</p>
+                <div style="display: grid; gap: 20px; text-align: left;">
+                    <div style="background: #fff; border: 1px solid var(--border); border-radius: 16px; padding: 24px; transition: transform 0.3s; cursor: default;"
+                        onmouseover="this.style.transform='translateY(-3px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
+                        <h4 style="margin: 0 0 8px;">🎯 Accuracy over speed</h4>
+                        <p style="color: var(--text-muted); margin: 0; line-height: 1.6; font-size: 0.92rem;">We'd
+                            rather take an
+                            extra second to get the macros right than give you a fast, wrong answer. The multimodal
+                            approach exists
+                            because precision matters.</p>
+                    </div>
+                    <div style="background: #fff; border: 1px solid var(--border); border-radius: 16px; padding: 24px; transition: transform 0.3s; cursor: default;"
+                        onmouseover="this.style.transform='translateY(-3px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
+                        <h4 style="margin: 0 0 8px;">🔒 Privacy by design</h4>
+                        <p style="color: var(--text-muted); margin: 0; line-height: 1.6; font-size: 0.92rem;">Your food
+                            photos and
+                            voice recordings are processed transiently and deleted immediately after analysis. We comply
+                            fully with
+                            the DPDPA 2023. Your health data is yours.</p>
+                    </div>
+                    <div style="background: #fff; border: 1px solid var(--border); border-radius: 16px; padding: 24px; transition: transform 0.3s; cursor: default;"
+                        onmouseover="this.style.transform='translateY(-3px)'"
+                        onmouseout="this.style.transform='translateY(0)'">
+                        <h4 style="margin: 0 0 8px;">💚 Fair pricing</h4>
+                        <p style="color: var(--text-muted); margin: 0; line-height: 1.6; font-size: 0.92rem;">We'll
+                            never lock
+                            basic calorie tracking behind a paywall. Free users get real AI-powered tracking, not a
+                            crippled demo.
+                            Pro exists for power users who want deeper insights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta">
+            <div class="container cta-box">
+                <img src="./mascots/surfing.svg" alt="Stitchy mascot surfing" class="float-anim" />
+                <div>
+                    <h2>Join the Stitchy community.</h2>
+                    <p>Start your smarter nutrition journey today.</p>
+                </div>
+                <a class="btn btn-primary btn-lg" href="./early-access.html">Start Tracking Free</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" style="background: #4169e1; color: white;">
+        <div class="container">
+            <div class="footer-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; padding: 64px 0 24px;">
+                <div class="col">
+                    <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">PRODUCT
+                    </h4>
+                    <a href="./index.html"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Home</a>
+                    <a href="./pricing.html"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Pricing</a>
+                    <a href="./index.html#insights"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">AI
+                        Insights</a>
+                </div>
+                <div class="col">
+                    <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">GUIDES
+                    </h4>
+                    <a href="#"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Calorie
+                        Tracking 101</a>
+                    <a href="#"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Indian
+                        Diet Macros</a>
+                    <a href="#"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Weight
+                        Loss Tips</a>
+                </div>
+                <div class="col">
+                    <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">COMPANY
+                    </h4>
+                    <a href="./about.html"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">About</a>
+                    <a href="./contact.html"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Contact</a>
+                    <a href="./privacy.html"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Privacy</a>
+                    <a href="./terms.html"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Terms</a>
+                </div>
+            </div>
+            <div class="footer-row"
+                style="color: #aed0ff; border-top: 1px solid rgba(255,255,255,0.2); margin-top: 10px; padding-top: 24px; padding-bottom: 24px; font-size: 0.9rem;">
+                <p>© <span id="year"></span> Stitchy. All Rights Reserved.</p>
+                <p>Smart AI-powered calorie tracking and health insights for real Indian meals.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js?v=1774728863042"></script>
+</body>
+
+</html>

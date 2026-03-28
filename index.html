@@ -4,43 +4,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stitchy — Smart Indian Calorie Tracker</title>
+  <title>Stitchy — AI-Powered Indian Calorie Tracker with Health Insights</title>
   <link rel="icon" href="./mascots/logo.svg" type="image/svg+xml" />
   <meta name="description"
-    content="Stitchy helps you track Indian meals with AI. Snap, speak, and get instant nutrition insights with a friendly daily journal." />
+    content="Stitchy uses multimodal AI to track Indian meals, predict health trends, forecast mood & energy, and deliver actionable nutrition insights — just snap and speak." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <link rel="stylesheet" href="./styles.css?v=1774728863042" />
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#top">
-        <img src="./mascots/logo.svg" alt="Stitchy logo" />
-        <span>Stitchy</span>
-      </a>
-      <nav class="nav-links">
-        <a href="#how">How it works</a>
-        <a href="#features">Features</a>
-        <a href="#insights">Insights</a>
-      </nav>
-      <div class="header-actions">
-        <a class="btn btn-primary header-btn" href="#cta">Start Tracking</a>
-        <button class="menu-toggle" aria-label="Toggle navigation">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
+
+  <div class="card-nav-container">
+    <nav class="card-nav" id="globalNav" style="background-color: #fff;">
+      <div class="card-nav-top">
+        <div class="hamburger-menu" id="hamburgerMenu" role="button" aria-label="Open menu" tabindex="0"
+          style="color: #000;">
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </div>
+
+        <a class="logo-container" href="./index.html" style="text-decoration:none;">
+          <img src="./mascots/logo.svg" alt="Stitchy Logo" class="logo" />
+        </a>
+
+        <a href="./early-access.html" class="card-nav-cta-button"
+          style="background-color: #111; color: white; display: flex; text-decoration: none;">Get Started</a>
       </div>
-    </div>
-  </header>
+
+      <div class="card-nav-content" id="cardNavContent" aria-hidden="true">
+        <div class="nav-card" style="background-color: #f3f4f6; color: #111827;">
+          <div class="nav-card-label">Product</div>
+          <div class="nav-card-links">
+
+            <a class="nav-card-link" href="./index.html">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+              </svg>
+              Home
+            </a>
+            <a class="nav-card-link" href="./index.html#how">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+              </svg>
+              How it Works
+            </a>
+            <a class="nav-card-link" href="./index.html#features">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+              </svg>
+              Features
+            </a>
+            <a class="nav-card-link" href="./index.html#insights">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+              </svg>
+              AI Insights
+            </a>
+          </div>
+        </div>
+        <div class="nav-card" style="background-color: #e5e7eb; color: #111827;">
+          <div class="nav-card-label">Company</div>
+          <div class="nav-card-links">
+            <a class="nav-card-link" href="./about.html">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+              </svg>
+              About Us
+            </a>
+            <a class="nav-card-link" href="./contact.html">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+              </svg>
+              Contact
+            </a>
+            <a class="nav-card-link" href="./pricing.html">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+              </svg>
+              Pricing
+            </a>
+          </div>
+        </div>
+        <div class="nav-card" style="background-color: #f9fafb; color: #111827;">
+          <div class="nav-card-label">Legal</div>
+          <div class="nav-card-links">
+            <a class="nav-card-link" href="./privacy.html">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+              </svg>
+              Privacy Policy
+            </a>
+            <a class="nav-card-link" href="./terms.html">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+              </svg>
+              Terms of Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
 
   <main id="top">
+    <!-- ===== HERO ===== -->
     <section class="hero reveal-on-scroll">
       <div class="container hero-grid">
         <div class="hero-copy">
@@ -48,52 +129,198 @@
           <h1 style="font-size: clamp(2rem, 3.5vw, 3.2rem);">Logging Indian meals is now as effortless as a WhatsApp
             voice note.</h1>
           <p class="hero-text">
-            Stitchy combines photo + voice input to understand real meals, estimate macros, and help you build healthier
-            habits without manual logging friction.
+            Stitchy combines photo + voice input to understand real meals, estimate macros, and predict how your food
+            choices affect your health, mood, and energy levels.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#cta" style="font-size:1.1rem;"> Download on iOS</a>
-            <a class="btn btn-secondary" href="#cta" style="font-size:1.1rem; border:2px solid var(--border);">▶ Get it
-              on Android</a>
+            <a class="btn btn-primary" href="./early-access.html" style="font-size:1.1rem; padding: 14px 28px;">🚀 Start
+              Tracking
+              Free</a>
           </div>
-          <p class="hero-subtext">Built for home-cooked plates, thalis, curries, and everyday Indian diets.</p>
+          <p class="hero-subtext">Snap meals → get instant AI health predictions → spot patterns and improve.</p>
         </div>
-        <div class="hero-card">
-          <img src="./mascots/waving.svg" alt="Stitchy mascot waving" class="mascot float-anim" />
-          <div class="stat">
-            <span>Today</span>
-            <strong>1,420 kcal</strong>
-          </div>
-          <div class="bars">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                <label style="margin: 0;">Protein</label>
-                <div style="font-size: 0.92rem; font-weight: 600; color: var(--text);">75g <span
-                    style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">/ 100g</span></div>
+        <div class="card-swap-wrapper">
+          <div class="card-swap-container">
+            <!-- Card 1 -->
+            <div class="card hero-card">
+              <img src="./mascots/waving.svg" alt="Stitchy mascot waving" class="mascot float-anim" />
+              <div class="stat">
+                <span>Today</span>
+                <strong>1,420 kcal</strong>
               </div>
-              <progress value="75" max="100"></progress>
+              <div class="bars">
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <label style="margin: 0;">Protein</label>
+                    <div style="font-size: 0.92rem; font-weight: 600; color: var(--text);">75g <span
+                        style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">/ 100g</span></div>
+                  </div>
+                  <progress value="75" max="100"></progress>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <label style="margin: 0;">Carbs</label>
+                    <div style="font-size: 0.92rem; font-weight: 600; color: var(--text);">160g <span
+                        style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">/ 260g</span></div>
+                  </div>
+                  <progress value="160" max="260"></progress>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <label style="margin: 0;">Fats</label>
+                    <div style="font-size: 0.92rem; font-weight: 600; color: var(--text);">50g <span
+                        style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">/ 104g</span></div>
+                  </div>
+                  <progress value="50" max="104"></progress>
+                </div>
+              </div>
             </div>
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                <label style="margin: 0;">Carbs</label>
-                <div style="font-size: 0.92rem; font-weight: 600; color: var(--text);">160g <span
-                    style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">/ 260g</span></div>
+
+            <!-- Card 2 -->
+            <div class="card hero-card">
+              <img src="./mascots/eating.svg" alt="Stitchy mascot eating" class="mascot float-anim" />
+              <div class="stat">
+                <span>Yesterday</span>
+                <strong>1,850 kcal</strong>
               </div>
-              <progress value="160" max="260"></progress>
+              <div class="bars">
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <label style="margin: 0;">Protein</label>
+                    <div style="font-size: 0.92rem; font-weight: 600; color: var(--text);">90g <span
+                        style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">/ 100g</span></div>
+                  </div>
+                  <progress value="90" max="100"></progress>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <label style="margin: 0;">Carbs</label>
+                    <div style="font-size: 0.92rem; font-weight: 600; color: var(--text);">210g <span
+                        style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">/ 260g</span></div>
+                  </div>
+                  <progress value="210" max="260"></progress>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <label style="margin: 0;">Fats</label>
+                    <div style="font-size: 0.92rem; font-weight: 600; color: var(--text);">85g <span
+                        style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">/ 104g</span></div>
+                  </div>
+                  <progress value="85" max="104"></progress>
+                </div>
+              </div>
             </div>
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                <label style="margin: 0;">Fats</label>
-                <div style="font-size: 0.92rem; font-weight: 600; color: var(--text);">50g <span
-                    style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">/ 104g</span></div>
+
+            <!-- Card 3 -->
+            <div class="card hero-card">
+              <img src="./mascots/happy.svg" alt="Stitchy mascot happy" class="mascot float-anim" />
+              <div class="stat">
+                <span>Tuesday</span>
+                <strong>1,620 kcal</strong>
               </div>
-              <progress value="50" max="104"></progress>
+              <div class="bars">
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <label style="margin: 0;">Protein</label>
+                    <div style="font-size: 0.92rem; font-weight: 600; color: var(--text);">100g <span
+                        style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">/ 100g</span></div>
+                  </div>
+                  <progress value="100" max="100"></progress>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <label style="margin: 0;">Carbs</label>
+                    <div style="font-size: 0.92rem; font-weight: 600; color: var(--text);">190g <span
+                        style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">/ 260g</span></div>
+                  </div>
+                  <progress value="190" max="260"></progress>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <label style="margin: 0;">Fats</label>
+                    <div style="font-size: 0.92rem; font-weight: 600; color: var(--text);">60g <span
+                        style="font-weight: 400; color: var(--text-muted); font-size: 0.8rem;">/ 104g</span></div>
+                  </div>
+                  <progress value="60" max="104"></progress>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ===== ORIGINALITY SHOWCASE ===== -->
+    <section id="originality" class="section reveal-on-scroll">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 48px;">
+          <h2 style="font-size: clamp(1.8rem, 3vw, 2.8rem);">Uniquely Built for You ✨</h2>
+          <p class="section-lead" style="margin: 12px auto 0; max-width: 60ch;">
+            Witness how Stitchy stands out. Every component is crafted to deliver a unique, seamless, and original
+            experience tailored to tracking Indian meals.
+          </p>
+        </div>
+
+        <div class="originality-grid">
+          <div class="originality-card reveal-on-scroll">
+            <div class="originality-img-wrapper">
+              <img src="./image.png" alt="Stitchy App Interface 1" class="originality-img" />
+            </div>
+          </div>
+          <div class="originality-card reveal-on-scroll" style="transition-delay: 0.1s">
+            <div class="originality-img-wrapper">
+              <img src="./image copy.png" alt="Stitchy App Interface 2" class="originality-img" />
+            </div>
+          </div>
+          <div class="originality-card reveal-on-scroll" style="transition-delay: 0.2s">
+            <div class="originality-img-wrapper">
+              <img src="./image copy 2.png" alt="Stitchy App Interface 3" class="originality-img" />
+            </div>
+          </div>
+          <div class="originality-card reveal-on-scroll" style="transition-delay: 0.3s">
+            <div class="originality-img-wrapper">
+              <img src="./image copy 3.png" alt="Stitchy App Interface 4" class="originality-img" />
+            </div>
+          </div>
+          <div class="originality-card reveal-on-scroll" style="transition-delay: 0.4s">
+            <div class="originality-img-wrapper">
+              <img src="./image copy 4.png" alt="Stitchy App Interface 5" class="originality-img" />
+            </div>
+          </div>
+          <div class="originality-card reveal-on-scroll" style="transition-delay: 0.5s">
+            <div class="originality-img-wrapper">
+              <img src="./image copy 5.png" alt="Stitchy App Interface 6" class="originality-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY WE BUILT STITCHY ===== -->
+    <section class="section founder-story reveal-on-scroll">
+      <div class="container insight-wrap" style="align-items: center;">
+        <div class="founder-images" style="display:flex; justify-content:center;">
+          <img src="./mascots/logo.svg" alt="Stitchy mascot" class="round-img float-anim"
+            style="background:#fff; padding:30px; border-radius:30px; box-shadow:var(--shadow); width: 220px;" />
+        </div>
+        <div>
+          <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Why we built Stitchy 🇮🇳</h2>
+          <p style="color: var(--text-muted); line-height: 1.7; font-size: 1.1rem; margin-bottom: 16px;">
+            Tracking Indian food on traditional apps like MyFitnessPal is incredibly frustrating.
+          </p>
+          <p style="color: var(--text-muted); line-height: 1.7; font-size: 1.05rem; margin-bottom: 16px;">
+            Western trackers fail to account for hidden ghee, cooking oils, and the vast complexity of an Indian Thali.
+            You end up searching for "1 katori dal" and picking a random option that is wildly inaccurate.
+          </p>
+          <p style="color: var(--text-muted); line-height: 1.7; font-size: 1.05rem;">
+            We wanted to create a tracker that felt <strong>incredible to use</strong>—as easy as taking a photo and
+            leaving a quick voice note about what you ate. The AI does all the heavy lifting.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
     <section id="how" class="section reveal-on-scroll">
       <div class="container">
         <div
@@ -131,119 +358,168 @@
       </div>
     </section>
 
-    <section class="section founder-story reveal-on-scroll alt">
-      <div class="container insight-wrap" style="align-items: center;">
-        <div class="founder-images" style="display:flex; justify-content:center;">
-          <img src="./mascots/logo.svg" alt="Stitchy mascot" class="round-img float-anim"
-            style="background:#fff; padding:30px; border-radius:30px; box-shadow:var(--shadow); width: 220px;" />
-        </div>
-        <div>
-          <h2 style="font-size: 2.2rem; margin-bottom: 20px;">Why we built Stitchy 🇮🇳</h2>
-          <p style="color: var(--text-muted); line-height: 1.7; font-size: 1.1rem; margin-bottom: 16px;">
-            Tracking Indian food on traditional apps like MyFitnessPal is incredibly frustrating.
-          </p>
-          <p style="color: var(--text-muted); line-height: 1.7; font-size: 1.05rem; margin-bottom: 16px;">
-            Western trackers fail to account for hidden ghee, cooking oils, and the vast complexity of an Indian Thali.
-            You end up searching for "1 katori dal" and picking a random option that is wildly inaccurate.
-          </p>
-          <p style="color: var(--text-muted); line-height: 1.7; font-size: 1.05rem;">
-            We wanted to create a tracker that felt <strong>incredible to use</strong>—as easy as taking a photo and
-            leaving a quick voice note about what you ate. The AI does all the heavy lifting.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="features" class="section reveal-on-scroll">
-      <div class="container">
-        <div style="text-align: center; margin-bottom: 48px;">
-          <h2>Simple, but powerful 💪</h2>
-          <p class="section-lead" style="margin: 12px auto 0;">Features designed to make your daily tracking effortless.
-          </p>
-        </div>
-        <div class="feature-grid enhanced-grid">
-          <article class="feature-card reveal-on-scroll">
-            <img src="./mascots/feature_ai.png"
-              style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--border);"
-              alt="Multimodal AI icon" />
-            <h3>Multimodal AI</h3>
-            <p>Image + voice combined for hyper-accurate Indian meal estimates.</p>
-          </article>
-          <article class="feature-card reveal-on-scroll" style="transition-delay: 0.1s">
-            <img src="./mascots/feature_lang.png"
-              style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--border);"
-              alt="Language icon" />
-            <h3>For Indian Language</h3>
-            <p>Speak naturally. Stitchy understands Dal, Sabzi, and Roti perfectly.</p>
-          </article>
-          <article class="feature-card reveal-on-scroll" style="transition-delay: 0.2s">
-            <img src="./mascots/feature_macros.png"
-              style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--border);"
-              alt="Macros chart icon" />
-            <h3>Detailed Breakdown</h3>
-            <p>See exactly how much protein, fat, and carbs are in every plate.</p>
-          </article>
-          <article class="feature-card reveal-on-scroll" style="transition-delay: 0.3s">
-            <img src="./mascots/feature_targets.png"
-              style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--border);"
-              alt="Targets dartboard icon" />
-            <h3>Dynamic Targets</h3>
-            <p>Calorie and macro goals tailored precisely to your personal profile.</p>
-          </article>
-          <article class="feature-card reveal-on-scroll">
-            <img src="./mascots/feature_streak.png"
-              style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--border);"
-              alt="Streaks flame icon" />
-            <h3>Streaks & Habits</h3>
-            <p>Stay motivated by hitting your daily tracking goals consistently.</p>
-          </article>
-          <article class="feature-card reveal-on-scroll" style="transition-delay: 0.1s">
-            <img src="./mascots/feature_save.png"
-              style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--border);"
-              alt="Save heart icon" />
-            <h3>Quick Saved Meals</h3>
-            <p>Eat the same breakfast? Save it and log it with a single tap.</p>
-          </article>
-          <article class="feature-card reveal-on-scroll" style="transition-delay: 0.2s">
-            <img src="./mascots/feature_sync.png"
-              style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--border);"
-              alt="Sync chain icon" />
-            <h3>Health Syncing</h3>
-            <p>Imports your steps and active burn from Apple & Google Health.</p>
-          </article>
-          <article class="feature-card reveal-on-scroll" style="transition-delay: 0.3s">
-            <img src="./mascots/feature_widget.png"
-              style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 16px; border: 1px solid var(--border);"
-              alt="Widget icon" />
-            <h3>Home Widgets</h3>
-            <p>Keep your calories left front-and-center directly on your home screen.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
+    <!-- ===== AI INSIGHTS — EXPANDED CORE FEATURE ===== -->
     <section id="insights" class="section reveal-on-scroll">
-      <div class="container insight-wrap">
-        <div>
-          <h2>Your food journal, not just a calorie counter</h2>
-          <p class="section-lead">
-            Stitchy helps you spot patterns across days, so decisions feel informed instead of guessy.
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 16px;">
+          <p class="kicker" style="font-size: 0.9rem;">THE CORE FEATURE</p>
+          <h2 style="font-size: clamp(1.8rem, 3vw, 2.8rem);">AI-Powered Health Insights 🧠</h2>
+          <p class="section-lead" style="margin: 16px auto 0; max-width: 60ch; text-align: center;">
+            Stitchy doesn't just count calories. It uses your food data to predict how your meals impact your health,
+            mood, and energy — turning every logged plate into a data point for smarter living.
           </p>
-          <ul class="bullet-list">
-            <li>Daily meal history with calories and macros</li>
-            <li>Health score with explainable summary</li>
-            <li>Actionable suggestions for better balance</li>
-          </ul>
         </div>
-        <div class="insight-card reveal-on-scroll" style="transition-delay: 0.2s">
-          <img src="./mascots/happy.svg" alt="Stitchy mascot happy" class="float-anim" />
-          <p class="score">Health Score <strong>78 / 100</strong></p>
-          <p class="small">Strong protein consistency. Improve fiber and reduce late-night refined carbs.</p>
+
+        <!-- 3-Card Feature Grid -->
+        <div class="insights-grid">
+          <article class="insight-feature-card reveal-on-scroll" style="transition-delay: 0.1s">
+            <div class="ifc-icon health-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <h3>Health Score Predictor</h3>
+            <p class="ifc-desc">Every day, Stitchy calculates a dynamic <strong>Health Score (0–100)</strong> based on
+              your meal composition, micronutrient balance, and dietary consistency.</p>
+            <ul class="ifc-details">
+              <li><strong>Nutrient density analysis</strong> — Are you getting enough iron, fiber, vitamins from your
+                dal, sabzi, and greens?</li>
+              <li><strong>Pattern recognition</strong> — Tracks how your score trends over 7-day and 30-day rolling
+                windows</li>
+              <li><strong>Explainable AI</strong> — Every score comes with a plain-English summary: <em>"Score dropped
+                  because of low protein and excess refined carbs yesterday"</em></li>
+            </ul>
+            <div class="ifc-demo-badge">
+              <span>Your Health Score</span>
+              <strong>78 / 100</strong>
+            </div>
+          </article>
+
+          <article class="insight-feature-card reveal-on-scroll" style="transition-delay: 0.2s">
+            <div class="ifc-icon mood-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                <line x1="9" y1="9" x2="9.01" y2="9" />
+                <line x1="15" y1="9" x2="15.01" y2="9" />
+              </svg>
+            </div>
+            <h3>Mood & Energy Forecasting</h3>
+            <p class="ifc-desc">The AI correlates your food choices with self-reported mood and energy check-ins,
+              discovering <strong>patterns you can't see yourself</strong>.</p>
+            <ul class="ifc-details">
+              <li><strong>Post-meal energy tracking</strong> — Log how you feel after meals; AI finds the foods that
+                drain or boost you</li>
+              <li><strong>Sugar crash detection</strong> — Identifies meals that cause afternoon energy crashes from
+                refined carb spikes</li>
+              <li><strong>Weekly mood reports</strong> — Visual charts showing the correlation between your diet and
+                emotional well-being</li>
+            </ul>
+            <div class="ifc-demo-badge mood-badge">
+              <span>Afternoon Energy</span>
+              <strong>↑ 23% this week</strong>
+            </div>
+          </article>
+
+          <article class="insight-feature-card reveal-on-scroll" style="transition-delay: 0.3s">
+            <div class="ifc-icon reco-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </div>
+            <h3>Smart Recommendations</h3>
+            <p class="ifc-desc">Instead of generic diet advice, Stitchy delivers <strong>hyper-personalised, actionable
+                suggestions</strong> based on YOUR actual food logs.</p>
+            <ul class="ifc-details">
+              <li><strong>Contextual nudges</strong> — <em>"Your energy dips when you skip protein at lunch. Try adding
+                  paneer or dal."</em></li>
+              <li><strong>Macro balancing</strong> — Suggests swaps to hit your protein/fat/carb targets without
+                changing your cooking style</li>
+              <li><strong>Progressive improvement</strong> — Recommendations evolve as more data is logged, getting
+                smarter every week</li>
+            </ul>
+            <div class="ifc-demo-badge reco-badge">
+              <span>This week's insight</span>
+              <strong>+12g protein/day needed</strong>
+            </div>
+          </article>
+        </div>
+
+        <!-- How the AI Works — Process Strip -->
+        <div class="ai-process-strip reveal-on-scroll" style="transition-delay: 0.2s">
+          <h3 style="text-align: center; margin-bottom: 24px; font-size: 1.15rem;">How the AI generates your insights
+          </h3>
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="ps-number">1</div>
+              <p><strong>Log meals</strong> with photo + voice context daily</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+              <div class="ps-number">2</div>
+              <p><strong>AI analyses</strong> nutrients, patterns, and dietary quality</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+              <div class="ps-number">3</div>
+              <p><strong>Predictions generated</strong> for health score, mood, and energy</p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-step">
+              <div class="ps-number">4</div>
+              <p><strong>Smart suggestions</strong> delivered to improve your next meal</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Future Vision: Wearables Banner -->
+        <div class="vision-banner reveal-on-scroll" style="transition-delay: 0.3s">
+          <div class="vision-content">
+            <span class="vision-badge">COMING SOON</span>
+            <h3>The future: Wearable-powered insights ⌚</h3>
+            <p>We're building integrations with smartwatches and fitness bands to make Stitchy's AI even smarter.
+              When your food data meets your body data, the predictions become incredibly precise.</p>
+            <ul class="vision-list">
+              <li>
+                <strong>Sleep quality correlation</strong>
+                <span>Discover how late-night meals affect your deep sleep cycles</span>
+              </li>
+              <li>
+                <strong>Activity-adjusted calorie targets</strong>
+                <span>Auto-adjust your daily budget based on actual calories burned</span>
+              </li>
+              <li>
+                <strong>Heart rate & stress patterns</strong>
+                <span>Correlate food choices with resting heart rate and stress levels</span>
+              </li>
+              <li>
+                <strong>Holistic health dashboard</strong>
+                <span>One unified view of food + sleep + activity + mood for total wellness</span>
+              </li>
+            </ul>
+          </div>
+          <div class="vision-visual">
+            <img src="./mascots/happy.svg" alt="Stitchy happy about wearables" class="float-anim"
+              style="width: 120px;" />
+            <div class="vision-data-points">
+              <span class="vdp">💤 Sleep: 7.2h</span>
+              <span class="vdp">🔥 Burned: 2,180 kcal</span>
+              <span class="vdp">🏃 Steps: 8,450</span>
+              <span class="vdp">❤️ Resting HR: 62 bpm</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section alt faq reveal-on-scroll">
+
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq reveal-on-scroll">
       <div class="container insight-wrap">
         <div>
           <h2>FAQ</h2>
@@ -260,6 +536,16 @@
               <summary>Does Stitchy support Indian cuisine well?</summary>
               <p>Yes. The nutrition analysis flow is optimized for Indian dishes, portions, and cooking context.</p>
             </details>
+            <details>
+              <summary>How accurate are the AI health predictions?</summary>
+              <p>The predictions improve over time as you log more meals. With 7+ days of data, the health score and
+                mood patterns become highly reliable. The AI always explains its reasoning so you stay in control.</p>
+            </details>
+            <details>
+              <summary>When will wearable integration be available?</summary>
+              <p>We're actively building Apple Watch and Google Fit integrations. Early access will roll out to Pro
+                subscribers first. Join the waitlist to be notified.</p>
+            </details>
           </div>
         </div>
         <div class="insight-card reveal-on-scroll"
@@ -269,14 +555,15 @@
       </div>
     </section>
 
+    <!-- ===== CTA ===== -->
     <section id="cta" class="section cta reveal-on-scroll">
       <div class="container cta-box">
         <img src="./mascots/surfing.svg" alt="Stitchy mascot surfing" class="float-anim" />
         <div>
           <h2>Build better food habits with Stitchy.</h2>
-          <p>Start logging meals in minutes and get clearer nutrition decisions every day.</p>
+          <p>Start logging meals in minutes and get AI-powered health insights every day.</p>
         </div>
-        <a class="btn btn-primary btn-lg" href="#">Start now</a>
+        <a class="btn btn-primary btn-lg" href="./early-access.html">Start Tracking Free</a>
       </div>
     </section>
   </main>
@@ -287,22 +574,18 @@
         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; padding: 64px 0 24px;">
         <div class="col">
           <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">PRODUCT</h4>
-          <a href="#"
+          <a href="./index.html"
             style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;"
             onmouseover="this.style.opacity='1'; this.style.textDecoration='underline'"
             onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">Home</a>
-          <a href="#"
+          <a href="./pricing.html"
             style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;"
             onmouseover="this.style.opacity='1'; this.style.textDecoration='underline'"
             onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">Pricing</a>
-          <a href="#"
+          <a href="#insights"
             style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;"
             onmouseover="this.style.opacity='1'; this.style.textDecoration='underline'"
-            onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">iOS App</a>
-          <a href="#"
-            style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;"
-            onmouseover="this.style.opacity='1'; this.style.textDecoration='underline'"
-            onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">Android App</a>
+            onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">AI Insights</a>
         </div>
         <div class="col">
           <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">GUIDES</h4>
@@ -320,39 +603,20 @@
             onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">Weight Loss Tips</a>
         </div>
         <div class="col">
-          <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">COMPARE</h4>
-          <a href="#"
-            style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;"
-            onmouseover="this.style.opacity='1'; this.style.textDecoration='underline'"
-            onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">Stitchy vs HealthifyMe</a>
-          <a href="#"
-            style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;"
-            onmouseover="this.style.opacity='1'; this.style.textDecoration='underline'"
-            onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">Stitchy vs MyFitnessPal</a>
-          <a href="#"
-            style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;"
-            onmouseover="this.style.opacity='1'; this.style.textDecoration='underline'"
-            onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">Stitchy vs LoseIt</a>
-          <a href="#"
-            style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;"
-            onmouseover="this.style.opacity='1'; this.style.textDecoration='underline'"
-            onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">Alternatives</a>
-        </div>
-        <div class="col">
           <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">COMPANY</h4>
-          <a href="#"
+          <a href="./about.html"
             style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;"
             onmouseover="this.style.opacity='1'; this.style.textDecoration='underline'"
             onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">About</a>
-          <a href="#"
+          <a href="./contact.html"
             style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;"
             onmouseover="this.style.opacity='1'; this.style.textDecoration='underline'"
             onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">Contact</a>
-          <a href="#"
+          <a href="./privacy.html"
             style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;"
             onmouseover="this.style.opacity='1'; this.style.textDecoration='underline'"
             onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">Privacy</a>
-          <a href="#"
+          <a href="./terms.html"
             style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;"
             onmouseover="this.style.opacity='1'; this.style.textDecoration='underline'"
             onmouseout="this.style.opacity='0.9'; this.style.textDecoration='none'">Terms</a>
@@ -361,12 +625,12 @@
       <div class="footer-row"
         style="color: #aed0ff; border-top: 1px solid rgba(255,255,255,0.2); margin-top: 10px; padding-top: 24px; padding-bottom: 24px; font-size: 0.9rem;">
         <p>© <span id="year"></span> Stitchy. All Rights Reserved.</p>
-        <p>Smart calorie tracking for real Indian meals.</p>
+        <p>Smart AI-powered calorie tracking and health insights for real Indian meals.</p>
       </div>
     </div>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="./script.js?v=1774728863042"></script>
 </body>
 
 </html>

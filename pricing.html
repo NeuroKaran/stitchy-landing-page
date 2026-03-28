@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing — Stitchy | AI Calorie Tracker for Indian Food</title>
+    <link rel="icon" href="./mascots/logo.svg" type="image/svg+xml" />
+    <meta name="description"
+        content="Simple, transparent pricing for Stitchy. Start free with AI meal tracking, or upgrade to Pro for unlimited scans, health insights, and wearable sync." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="./styles.css?v=1774728863042" />
+</head>
+
+<body>
+
+    <div class="card-nav-container">
+        <nav class="card-nav" id="globalNav" style="background-color: #fff;">
+            <div class="card-nav-top">
+                <div class="hamburger-menu" id="hamburgerMenu" role="button" aria-label="Open menu" tabindex="0"
+                    style="color: #000;">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+
+                <a class="logo-container" href="./index.html" style="text-decoration:none;">
+                    <img src="./mascots/logo.svg" alt="Stitchy Logo" class="logo" />
+                </a>
+
+                <a href="./early-access.html" class="card-nav-cta-button"
+                    style="background-color: #111; color: white; display: flex; text-decoration: none;">Get Started</a>
+            </div>
+
+            <div class="card-nav-content" id="cardNavContent" aria-hidden="true">
+                <div class="nav-card" style="background-color: #f3f4f6; color: #111827;">
+                    <div class="nav-card-label">Product</div>
+                    <div class="nav-card-links">
+
+                        <a class="nav-card-link" href="./index.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                            </svg>
+                            Home
+                        </a>
+                        <a class="nav-card-link" href="./index.html#how">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            How it Works
+                        </a>
+                        <a class="nav-card-link" href="./index.html#features">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            Features
+                        </a>
+                        <a class="nav-card-link" href="./index.html#insights">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            AI Insights
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-card" style="background-color: #e5e7eb; color: #111827;">
+                    <div class="nav-card-label">Company</div>
+                    <div class="nav-card-links">
+                        <a class="nav-card-link" href="./about.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            About Us
+                        </a>
+                        <a class="nav-card-link" href="./contact.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            Contact
+                        </a>
+                        <a class="nav-card-link" href="./pricing.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            Pricing
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-card" style="background-color: #f9fafb; color: #111827;">
+                    <div class="nav-card-label">Legal</div>
+                    <div class="nav-card-links">
+                        <a class="nav-card-link" href="./privacy.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            Privacy Policy
+                        </a>
+                        <a class="nav-card-link" href="./terms.html">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                            </svg>
+                            Terms of Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="kicker">PRICING</p>
+                <h1>Simple, transparent pricing</h1>
+                <p>Start tracking for free. Upgrade when you need more power.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="pricing-grid">
+                    <!-- Free Plan -->
+                    <div class="plan-card">
+                        <h3>Free</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0;">Get started instantly
+                        </p>
+                        <div class="plan-price">₹0<span> / forever</span></div>
+                        <p class="plan-billing">No credit card required</p>
+                        <ul class="plan-features">
+                            <li>5 AI meal scans per day</li>
+                            <li>Photo + voice input</li>
+                            <li>Daily calorie & macro tracking</li>
+                            <li>Basic health score</li>
+                            <li>7-day meal history</li>
+                            <li>Indian food database</li>
+                        </ul>
+                        <a class="btn btn-secondary" href="#" style="width: 100%; border: 2px solid var(--border);">Get
+                            Started
+                            Free</a>
+                    </div>
+
+                    <!-- Pro Plan -->
+                    <div class="plan-card featured">
+                        <span class="plan-badge">MOST POPULAR</span>
+                        <h3>Pro</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 0;">For serious health
+                            tracking</p>
+                        <div class="plan-price">₹399<span> / month</span></div>
+                        <p class="plan-billing">Billed monthly · Cancel anytime</p>
+                        <ul class="plan-features">
+                            <li>Unlimited AI meal scans</li>
+                            <li>Photo + voice input</li>
+                            <li>Full AI health insights dashboard</li>
+                            <li>Mood & energy forecasting</li>
+                            <li>Smart personalised recommendations</li>
+                            <li>30-day rolling health trends</li>
+                            <li>Unlimited meal history</li>
+                            <li>Quick saved meals</li>
+                            <li>Wearable sync (coming soon)</li>
+                            <li>Priority support</li>
+                        </ul>
+                        <a class="btn btn-primary" href="#" style="width: 100%;">Upgrade to Pro</a>
+                    </div>
+                </div>
+
+                <!-- Feature Comparison Table -->
+                <div style="margin-top: 64px;">
+                    <h2 style="text-align: center; margin-bottom: 8px;">Feature comparison</h2>
+                    <p class="section-lead" style="text-align: center; margin: 0 auto 32px;">See exactly what's included
+                        in each
+                        plan.</p>
+                    <table class="compare-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Free</th>
+                                <th>Pro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AI meal scans</td>
+                                <td>5 / day</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td>Photo + voice logging</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>Calorie & macro tracking</td>
+                                <td>✓</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>Health score</td>
+                                <td>Basic</td>
+                                <td>Advanced + trends</td>
+                            </tr>
+                            <tr>
+                                <td>Mood & energy forecasting</td>
+                                <td>—</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>Smart recommendations</td>
+                                <td>—</td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <td>Meal history</td>
+                                <td>7 days</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td>Saved meals</td>
+                                <td>3 meals</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td>Wearable sync</td>
+                                <td>—</td>
+                                <td>✓ (coming soon)</td>
+                            </tr>
+                            <tr>
+                                <td>Priority support</td>
+                                <td>—</td>
+                                <td>✓</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pricing Note -->
+                <div class="pricing-note">
+                    <h3>A note on pricing 💬</h3>
+                    <p>
+                        We believe great health tracking shouldn't be locked behind expensive paywalls. That's why our
+                        Free plan
+                        includes full photo + voice AI logging — not a crippled demo.
+                    </p>
+                    <p>
+                        Pro exists for power users who want deeper AI insights, mood tracking, and unlimited everything.
+                        We use the revenue to keep improving our AI models and expanding the Indian food database.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section faq">
+            <div class="container" style="max-width: 700px;">
+                <h2 style="text-align: center; margin-bottom: 24px;">Pricing FAQ</h2>
+                <div class="faq-list">
+                    <details>
+                        <summary>Can I switch between plans?</summary>
+                        <p>Yes. You can upgrade to Pro at any time and your data carries over seamlessly. You can also
+                            downgrade back
+                            to Free if needed.</p>
+                    </details>
+                    <details>
+                        <summary>Is there a yearly plan?</summary>
+                        <p>We're working on an annual plan with a significant discount. Stay tuned — it's coming soon.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>What payment methods do you accept?</summary>
+                        <p>We accept UPI, credit/debit cards, net banking, and popular wallets via our secure payment
+                            partner.</p>
+                    </details>
+                    <details>
+                        <summary>Can I get a refund?</summary>
+                        <p>Yes. If you're not satisfied, contact us within 7 days of your subscription for a full
+                            refund, no
+                            questions asked.</p>
+                    </details>
+                    <details>
+                        <summary>Will the price change?</summary>
+                        <p>Early subscribers lock in their price. If we ever raise prices, existing Pro members keep
+                            their original
+                            rate.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section cta">
+            <div class="container cta-box">
+                <img src="./mascots/surfing.svg" alt="Stitchy mascot surfing" class="float-anim" />
+                <div>
+                    <h2>Ready to track smarter?</h2>
+                    <p>Start free today and see how Stitchy transforms your nutrition journey.</p>
+                </div>
+                <a class="btn btn-primary btn-lg" href="./early-access.html">Start Tracking Free</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" style="background: #4169e1; color: white;">
+        <div class="container">
+            <div class="footer-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; padding: 64px 0 24px;">
+                <div class="col">
+                    <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">PRODUCT
+                    </h4>
+                    <a href="./index.html"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Home</a>
+                    <a href="./pricing.html"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Pricing</a>
+                    <a href="./index.html#insights"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">AI
+                        Insights</a>
+                </div>
+                <div class="col">
+                    <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">GUIDES
+                    </h4>
+                    <a href="#"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Calorie
+                        Tracking 101</a>
+                    <a href="#"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Indian
+                        Diet Macros</a>
+                    <a href="#"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Weight
+                        Loss Tips</a>
+                </div>
+                <div class="col">
+                    <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">COMPANY
+                    </h4>
+                    <a href="./about.html"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">About</a>
+                    <a href="./contact.html"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Contact</a>
+                    <a href="./privacy.html"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Privacy</a>
+                    <a href="./terms.html"
+                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Terms</a>
+                </div>
+            </div>
+            <div class="footer-row"
+                style="color: #aed0ff; border-top: 1px solid rgba(255,255,255,0.2); margin-top: 10px; padding-top: 24px; padding-bottom: 24px; font-size: 0.9rem;">
+                <p>© <span id="year"></span> Stitchy. All Rights Reserved.</p>
+                <p>Smart AI-powered calorie tracking and health insights for real Indian meals.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js?v=1774728863042"></script>
+</body>
+
+</html>
