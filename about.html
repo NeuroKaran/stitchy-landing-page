@@ -10,114 +10,116 @@
         content="Learn about Stitchy's mission to make calorie tracking effortless for Indian meals using multimodal AI — our story, technology, and vision." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <link rel="stylesheet" href="./styles.css?v=1774728863042" />
+    <link rel="stylesheet" href="./styles.css?v=1775018997530" />
 </head>
 
 <body>
 
-    <div class="card-nav-container">
-        <nav class="card-nav" id="globalNav" style="background-color: #fff;">
-            <div class="card-nav-top">
-                <div class="hamburger-menu" id="hamburgerMenu" role="button" aria-label="Open menu" tabindex="0"
-                    style="color: #000;">
-                    <div class="hamburger-line"></div>
-                    <div class="hamburger-line"></div>
-                </div>
-
-                <a class="logo-container" href="./index.html" style="text-decoration:none;">
-                    <img src="./mascots/logo.svg" alt="Stitchy Logo" class="logo" />
-                </a>
-
-                <a href="./early-access.html" class="card-nav-cta-button"
-                    style="background-color: #111; color: white; display: flex; text-decoration: none;">Get Started</a>
+    <!-- BEGIN:NAV -->
+<div class="card-nav-container">
+    <nav class="card-nav" id="globalNav" style="background-color: #fff;">
+        <div class="card-nav-top">
+            <div class="hamburger-menu" id="hamburgerMenu" role="button" aria-label="Open menu" tabindex="0"
+                style="color: #000;">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
             </div>
 
-            <div class="card-nav-content" id="cardNavContent" aria-hidden="true">
-                <div class="nav-card" style="background-color: #f3f4f6; color: #111827;">
-                    <div class="nav-card-label">Product</div>
-                    <div class="nav-card-links">
+            <a class="logo-container" href="./index.html" style="text-decoration:none;">
+                <img src="./mascots/logo.svg" alt="Stitchy Logo" class="logo" />
+            </a>
 
-                        <a class="nav-card-link" href="./index.html">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
-                            </svg>
-                            Home
-                        </a>
-                        <a class="nav-card-link" href="./index.html#how">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-                            </svg>
-                            How it Works
-                        </a>
-                        <a class="nav-card-link" href="./index.html#features">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-                            </svg>
-                            Features
-                        </a>
-                        <a class="nav-card-link" href="./index.html#insights">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-                            </svg>
-                            AI Insights
-                        </a>
-                    </div>
-                </div>
-                <div class="nav-card" style="background-color: #e5e7eb; color: #111827;">
-                    <div class="nav-card-label">Company</div>
-                    <div class="nav-card-links">
-                        <a class="nav-card-link" href="./about.html">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-                            </svg>
-                            About Us
-                        </a>
-                        <a class="nav-card-link" href="./contact.html">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-                            </svg>
-                            Contact
-                        </a>
-                        <a class="nav-card-link" href="./pricing.html">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-                            </svg>
-                            Pricing
-                        </a>
-                    </div>
-                </div>
-                <div class="nav-card" style="background-color: #f9fafb; color: #111827;">
-                    <div class="nav-card-label">Legal</div>
-                    <div class="nav-card-links">
-                        <a class="nav-card-link" href="./privacy.html">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-                            </svg>
-                            Privacy Policy
-                        </a>
-                        <a class="nav-card-link" href="./terms.html">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
-                            </svg>
-                            Terms of Service
-                        </a>
-                    </div>
+            <a href="https://stitchycalorie.vercel.app" class="card-nav-cta-button"
+                style="background-color: #111; color: white; display: flex; text-decoration: none;">Try Stitchy</a>
+        </div>
+
+        <div class="card-nav-content" id="cardNavContent" aria-hidden="true">
+            <div class="nav-card" style="background-color: #f3f4f6; color: #111827;">
+                <div class="nav-card-label">Product</div>
+                <div class="nav-card-links">
+
+                    <a class="nav-card-link" href="./index.html">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                        </svg>
+                        Home
+                    </a>
+                    <a class="nav-card-link" href="./index.html#how">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg>
+                        How it Works
+                    </a>
+                    <a class="nav-card-link" href="./index.html#features">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg>
+                        Features
+                    </a>
+                    <a class="nav-card-link" href="./index.html#insights">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg>
+                        AI Insights
+                    </a>
                 </div>
             </div>
-        </nav>
-    </div>
+            <div class="nav-card" style="background-color: #e5e7eb; color: #111827;">
+                <div class="nav-card-label">Company</div>
+                <div class="nav-card-links">
+                    <a class="nav-card-link" href="./about.html">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg>
+                        About Us
+                    </a>
+                    <a class="nav-card-link" href="./contact.html">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg>
+                        Contact
+                    </a>
+                    <a class="nav-card-link" href="./pricing.html">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg>
+                        Pricing
+                    </a>
+                </div>
+            </div>
+            <div class="nav-card" style="background-color: #f9fafb; color: #111827;">
+                <div class="nav-card-label">Legal</div>
+                <div class="nav-card-links">
+                    <a class="nav-card-link" href="./privacy.html">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg>
+                        Privacy Policy
+                    </a>
+                    <a class="nav-card-link" href="./terms.html">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            class="nav-card-link-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                        </svg>
+                        Terms of Service
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+  <!-- END:NAV -->
 
 
     <main>
@@ -284,61 +286,48 @@
                     <h2>Join the Stitchy community.</h2>
                     <p>Start your smarter nutrition journey today.</p>
                 </div>
-                <a class="btn btn-primary btn-lg" href="./early-access.html">Start Tracking Free</a>
+                <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                    <a class="btn btn-primary btn-lg" href="https://stitchycalorie.vercel.app">🌐 Try Web</a>
+                    <a class="btn btn-secondary btn-lg" href="./coming-soon.html"
+                        style="border: 2px solid var(--border); background: #fff;">📱 Get Android</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer" style="background: #4169e1; color: white;">
-        <div class="container">
-            <div class="footer-grid"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; padding: 64px 0 24px;">
-                <div class="col">
-                    <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">PRODUCT
-                    </h4>
-                    <a href="./index.html"
-                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Home</a>
-                    <a href="./pricing.html"
-                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Pricing</a>
-                    <a href="./index.html#insights"
-                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">AI
-                        Insights</a>
-                </div>
-                <div class="col">
-                    <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">GUIDES
-                    </h4>
-                    <a href="#"
-                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Calorie
-                        Tracking 101</a>
-                    <a href="#"
-                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Indian
-                        Diet Macros</a>
-                    <a href="#"
-                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Weight
-                        Loss Tips</a>
-                </div>
-                <div class="col">
-                    <h4 style="color: #aed0ff; font-size: 0.85rem; margin-bottom: 20px; letter-spacing: 0.5px;">COMPANY
-                    </h4>
-                    <a href="./about.html"
-                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">About</a>
-                    <a href="./contact.html"
-                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Contact</a>
-                    <a href="./privacy.html"
-                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Privacy</a>
-                    <a href="./terms.html"
-                        style="display: block; color: white; text-decoration: none; margin-bottom: 12px; font-size: 0.95rem; opacity: 0.9;">Terms</a>
-                </div>
+    <!-- BEGIN:FOOTER -->
+<footer class="site-footer" style="background: #4169e1; color: white;">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="col">
+                <h4 class="footer-heading">PRODUCT</h4>
+                <a href="./index.html" class="footer-link">Home</a>
+                <a href="./pricing.html" class="footer-link">Pricing</a>
+                <a href="./index.html#insights" class="footer-link">AI Insights</a>
             </div>
-            <div class="footer-row"
-                style="color: #aed0ff; border-top: 1px solid rgba(255,255,255,0.2); margin-top: 10px; padding-top: 24px; padding-bottom: 24px; font-size: 0.9rem;">
-                <p>© <span id="year"></span> Stitchy. All Rights Reserved.</p>
-                <p>Smart AI-powered calorie tracking and health insights for real Indian meals.</p>
+            <div class="col">
+                <h4 class="footer-heading">GUIDES</h4>
+                <a href="#" class="footer-link">Calorie Tracking 101</a>
+                <a href="#" class="footer-link">Indian Diet Macros</a>
+                <a href="#" class="footer-link">Weight Loss Tips</a>
+            </div>
+            <div class="col">
+                <h4 class="footer-heading">COMPANY</h4>
+                <a href="./about.html" class="footer-link">About</a>
+                <a href="./contact.html" class="footer-link">Contact</a>
+                <a href="./privacy.html" class="footer-link">Privacy</a>
+                <a href="./terms.html" class="footer-link">Terms</a>
             </div>
         </div>
-    </footer>
+        <div class="footer-row footer-bottom">
+            <p>&copy; <span id="year"></span> Stitchy. All Rights Reserved.</p>
+            <p>Smart AI-powered calorie tracking and health insights for real Indian meals.</p>
+        </div>
+    </div>
+</footer>
+  <!-- END:FOOTER -->
 
-    <script src="./script.js?v=1774728863042"></script>
+    <script src="./script.js?v=1775018997530"></script>
 </body>
 
 </html>

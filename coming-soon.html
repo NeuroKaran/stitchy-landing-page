@@ -2,23 +2,136 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms of Service — Stitchy</title>
-  <link rel="icon" href="./mascots/logo.svg" type="image/svg+xml" />
-  <meta name="description"
-    content="Stitchy terms of service — the rules governing your use of our AI-powered calorie tracking application." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <link rel="stylesheet" href="./styles.css?v=1775018997530" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Android App Coming Soon — Stitchy</title>
+    <link rel="icon" href="./mascots/logo.svg" type="image/svg+xml" />
+    <meta name="description"
+        content="The Stitchy Android app is coming soon! Track Indian meals with AI on your Android device. Get notified when it launches." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="./styles.css?v=1775018997530" />
+    <style>
+        .coming-soon-hero {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .coming-soon-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .coming-soon-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #4169e1, #6c5ce7);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            animation: pulse-badge 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-badge {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.05);
+                opacity: 0.9;
+            }
+        }
+
+        .coming-soon-content h1 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .coming-soon-content p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .coming-soon-mascot {
+            width: 160px;
+            margin: 0 auto 32px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        .coming-soon-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .android-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .android-feature {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .android-feature:hover {
+            transform: translateY(-3px);
+        }
+
+        .android-feature h4 {
+            margin: 0 0 6px;
+            font-size: 1rem;
+        }
+
+        .android-feature p {
+            margin: 0;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- BEGIN:NAV -->
+    <!-- BEGIN:NAV -->
 <div class="card-nav-container">
     <nav class="card-nav" id="globalNav" style="background-color: #fff;">
         <div class="card-nav-top">
@@ -121,107 +234,52 @@
 </div>
   <!-- END:NAV -->
 
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <p class="kicker">LEGAL</p>
-        <h1>Terms of Service</h1>
-        <p>Please read these terms carefully before using Stitchy.</p>
-        <p class="legal-date">Last updated: March 28, 2026</p>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container legal-content">
-        <h2>1. Acceptance of Terms</h2>
-        <p>By accessing or using the Stitchy application ("Service"), you agree to be bound by these Terms of
-          Service. If you do not agree, you must not use the Service.</p>
+    <main>
+        <section class="coming-soon-hero">
+            <div class="coming-soon-content">
+                <img src="./mascots/waving.svg" alt="Stitchy mascot waving" class="coming-soon-mascot" />
+                <div class="coming-soon-badge">Coming Soon</div>
+                <h1>Stitchy for Android is on the way! 📱</h1>
+                <p>
+                    We're building a native Android app so you can track your Indian meals on the go with the full power
+                    of Stitchy's multimodal AI.
+                </p>
+                <p style="font-size: 0.95rem;">
+                    In the meantime, you can use Stitchy right now on the web — it works beautifully on mobile browsers
+                    too!
+                </p>
 
-        <h2>2. Service Description</h2>
-        <p>Stitchy is an AI-powered nutritional tracking application that uses multimodal artificial
-          intelligence (photo + voice) to estimate the caloric and macronutrient content of meals, with a
-          focus on Indian cuisine. The Service also provides AI-generated health scores, mood/energy
-          forecasts, and dietary recommendations.</p>
+                <div class="android-features">
+                    <div class="android-feature">
+                        <h4>📸 Offline Photo Queue</h4>
+                        <p>Snap meals offline and sync when connected</p>
+                    </div>
+                    <div class="android-feature">
+                        <h4>🔔 Smart Reminders</h4>
+                        <p>Get nudges to log meals at your usual times</p>
+                    </div>
+                    <div class="android-feature">
+                        <h4>⌚ Wearable Sync</h4>
+                        <p>Connect with your fitness band for holistic tracking</p>
+                    </div>
+                    <div class="android-feature">
+                        <h4>⚡ Native Speed</h4>
+                        <p>Blazing fast experience optimized for Android</p>
+                    </div>
+                </div>
 
-        <h2>3. Account Registration</h2>
-        <ul>
-          <li>You must provide accurate, current, and complete information during registration.</li>
-          <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
-          <li>You must be at least 18 years old to use the Service.</li>
-          <li>One person may only maintain one account.</li>
-        </ul>
+                <div class="coming-soon-actions">
+                    <a class="btn btn-primary" href="https://stitchycalorie.vercel.app"
+                        style="font-size: 1.05rem; padding: 14px 28px;">🌐 Try Web App Now</a>
+                    <a class="btn btn-secondary" href="./index.html"
+                        style="font-size: 1.05rem; padding: 14px 28px; border: 2px solid var(--border);">← Back to
+                        Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <h2>4. AI Disclaimer</h2>
-        <p><strong>Important:</strong> Stitchy's nutritional estimates, health scores, mood predictions, and
-          dietary recommendations are generated by artificial intelligence and are provided for informational
-          purposes only. They are <strong>not</strong> medical advice.</p>
-        <ul>
-          <li>AI-generated nutritional data may contain inaccuracies. Always cross-verify critical dietary
-            decisions with a qualified nutritionist or healthcare provider.</li>
-          <li>Health scores and mood forecasts are based on statistical correlations in your food data — they
-            are not clinical diagnoses.</li>
-          <li>Stitchy is not a substitute for professional medical advice, diagnosis, or treatment.</li>
-        </ul>
-
-        <h2>5. Acceptable Use</h2>
-        <p>You agree not to:</p>
-        <ul>
-          <li>Use the Service for any unlawful purpose</li>
-          <li>Attempt to reverse-engineer, decompile, or extract the AI models</li>
-          <li>Submit intentionally misleading images or audio to manipulate AI outputs</li>
-          <li>Share your account credentials with third parties</li>
-          <li>Use automated tools to scrape or overload the Service</li>
-        </ul>
-
-        <h2>6. Subscription & Payments</h2>
-        <ul>
-          <li>The Free plan provides limited functionality as described on our <a href="./pricing.html">Pricing
-              page</a>.</li>
-          <li>The Pro plan is billed monthly. You may cancel at any time; access continues until the end of
-            the billing period.</li>
-          <li>Refunds are available within 7 days of subscription, no questions asked.</li>
-          <li>We reserve the right to change pricing with 30 days' advance notice. Existing subscribers retain
-            their current rate.</li>
-        </ul>
-
-        <h2>7. Intellectual Property</h2>
-        <p>All content, branding, AI models, and technology within Stitchy are owned by us. You retain ownership
-          of your personal data and meal content. By using the Service, you grant us a limited license to
-          process your data solely for providing the Service.</p>
-
-        <h2>8. User Content</h2>
-        <p>You retain all rights to photos and voice recordings you submit. We process this content solely for
-          AI analysis. Unless you grant explicit consent for AI training retention, all raw media is deleted
-          immediately after processing.</p>
-
-        <h2>9. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law:</p>
-        <ul>
-          <li>Stitchy is provided "as is" without warranties of any kind, express or implied.</li>
-          <li>We are not liable for any health decisions made based on AI-generated data.</li>
-          <li>Our total liability shall not exceed the amount you paid for the Service in the 12 months
-            preceding the claim.</li>
-          <li>We are not liable for indirect, incidental, or consequential damages.</li>
-        </ul>
-
-        <h2>10. Termination</h2>
-        <p>We may suspend or terminate your account if you violate these Terms. Upon termination, your right to
-          use the Service ceases immediately. You may request deletion of all your data per our <a
-            href="./privacy.html">Privacy Policy</a>.</p>
-
-        <h2>11. Governing Law</h2>
-        <p>These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive
-          jurisdiction of the courts in [City], India.</p>
-
-        <h2>12. Changes</h2>
-        <p>We may update these Terms from time to time. Material changes will be communicated via in-app
-          notification. Continued use constitutes acceptance.</p>
-
-        <h2>13. Contact</h2>
-        <p>For questions about these Terms, contact us at <strong>legal@stitchy.app</strong>.</p>
-      </div>
-    </section>
-  </main>
-  <!-- BEGIN:FOOTER -->
+    <!-- BEGIN:FOOTER -->
 <footer class="site-footer" style="background: #4169e1; color: white;">
     <div class="container">
         <div class="footer-grid">
@@ -252,7 +310,8 @@
     </div>
 </footer>
   <!-- END:FOOTER -->
-  <script src="./script.js?v=1775018997530"></script>
+
+    <script src="./script.js?v=1775018997530"></script>
 </body>
 
 </html>

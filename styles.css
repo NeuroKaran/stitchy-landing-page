@@ -1746,3 +1746,43 @@ progress {
   transform: scale(1.06);
   display: block;
 }
+
+/* ===== FOOTER ===== */
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  padding: 64px 0 24px;
+}
+
+.footer-heading {
+  color: #aed0ff;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  transition: opacity 0.2s ease, text-decoration 0.2s ease;
+}
+
+.footer-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  color: #aed0ff;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 10px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 0.9rem;
+}
